@@ -1,0 +1,7 @@
+/obj
+/debug
+/bin
+*.props
+*.dll
+*.cache
+*.target
