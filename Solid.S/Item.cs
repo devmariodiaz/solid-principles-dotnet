@@ -15,5 +15,10 @@ namespace Solid.S
             Producto = producto;
             Cantidad = cantidad;
         }
+
+        public double SubTotal()
+        {
+            return Cantidad * Producto.Precio;
+        }
     }
 }

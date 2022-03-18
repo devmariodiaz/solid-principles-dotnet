@@ -8,14 +8,13 @@ namespace Solid.S
     public class Factura
     {
         public int Numero { get; set; }
-        public string Nombre { get; set; }
-        public string Apellidos { get; set; }
+        public Cliente Cliente { get; set; }
+        public DateTime Fecha { get; set; }
         public List<Item> Items { get; set; }
 
-        public Factura(string Nombre, string Apellidos, int Numero)
+        public Factura(int Numero, Cliente Cliente)
         {
-            this.Nombre = Nombre;
-            this.Apellidos = Apellidos;
+            this.Cliente = Cliente;
             this.Numero = Numero;
             this.Items = new List<Item>();
         }
@@ -25,7 +24,7 @@ namespace Solid.S
             double total = 0;
             foreach(var item in Items) 
             {
-                total += item.Cantidad * item.Producto.Precio;
+                total += item.SubTotal();
             }
 
             return total;
