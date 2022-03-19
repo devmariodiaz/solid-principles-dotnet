@@ -2,5 +2,11 @@
 
 using Solid.O;
 
-DocumentoContable factura = new DocumentoContable(TipoDocumentoContableEnum.Factura, 123457890);
+Factura factura = new Factura(15454);
 Console.WriteLine(factura.Descripcion());
+
+NotaDebito notaDebito = new NotaDebito(1564154);
+Console.WriteLine(notaDebito.Descripcion());
+
+NotaCredito notaCredito = new NotaCredito(567809);
+Console.WriteLine(notaCredito.Descripcion());
