@@ -11,5 +11,28 @@ namespace Solid.O
         public double Importe { get; set; }
         public int Numero { get; set; }
         public TipoDocumentoContableEnum Tipo { get; set; }
+
+        public DocumentoContable(TipoDocumentoContableEnum tipo, int numero)
+        {
+            Tipo = tipo;
+            Numero = numero;
+        }
+
+        public string Descripcion(){
+            switch(Tipo)
+            {
+                case TipoDocumentoContableEnum.Factura:
+                    return $"FC-{Numero}";
+
+                case TipoDocumentoContableEnum.NotaCredito:
+                    return $"NC-{Numero}";
+
+                case TipoDocumentoContableEnum.NotaDebito:
+                    return $"ND-{Numero}";
+
+                default:
+                    return "N/D";
+            }
+        }
     }
 }

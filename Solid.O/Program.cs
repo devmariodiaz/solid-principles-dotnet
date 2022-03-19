@@ -1,2 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+
+using Solid.O;
+
+DocumentoContable factura = new DocumentoContable(TipoDocumentoContableEnum.Factura, 123457890);
+Console.WriteLine(factura.Descripcion());
