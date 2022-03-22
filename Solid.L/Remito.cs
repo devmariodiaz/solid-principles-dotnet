@@ -9,10 +9,5 @@ namespace Solid.L
         {
             CantBultos = bultos;
         }
-
-        public override string Descripcion()
-        {
-            return $"Remito nro {Numero} de fecha {Fecha.ToShortDateString()} con {CantBultos}";
-        }
     }
 }

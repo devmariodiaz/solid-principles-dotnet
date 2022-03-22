@@ -1,6 +1,6 @@
 namespace Solid.L
 {
-    public class NotaCredito : Documento
+    public class NotaCredito : DocumentoContable
     {
         public NotaCredito(int numero, DateTime fecha) : base(numero, fecha)
         {

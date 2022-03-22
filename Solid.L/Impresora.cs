@@ -2,19 +2,9 @@ namespace Solid.L
 {
     public class Impresora
     {
-        public void ImprimirRemito(Remito unRemito)
+        public void Imprimir(DocumentoContable documento)
         {
-            Console.WriteLine(unRemito.Descripcion());
-        }
-
-        public void ImprimirFactura(Factura unaFactura)
-        {
-            Console.WriteLine(unaFactura.Descripcion());
-        }
-
-        public void ImprimirNotaCredito(NotaCredito unaNotaCredito)
-        {
-            Console.WriteLine(unaNotaCredito.Descripcion());
+            Console.WriteLine(documento.Imprimir());
         }
     }
 }

@@ -1,6 +1,6 @@
 namespace Solid.L
 {
-    public class Factura : Documento
+    public class Factura : DocumentoContable
     {
         public Factura(int numero, DateTime fecha) : base (numero, fecha)
         {
