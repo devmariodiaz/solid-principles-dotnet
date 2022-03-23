@@ -1,6 +1,6 @@
 namespace Solid.L
 {
-    public class Remito : Documento
+    public class Remito : DocumentoContable
     {
         public int CantBultos { get; set; }
         
