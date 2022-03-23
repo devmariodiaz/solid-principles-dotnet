@@ -15,5 +15,8 @@ namespace Solid.I
             Numero = numero;
             Fecha = fecha;
         }
+
+        public abstract void Imprimir();
+        public abstract void EnviarPorEmail();
     }
 }
