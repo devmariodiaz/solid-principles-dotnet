@@ -7,7 +7,7 @@ namespace Solid.I
 {
     public class FacturaElectronica : DocumentoContable
     {
-        public int CAE { get; set; }
+        public string CAE { get; set; }
         public FacturaElectronica(int numero, DateTime fecha) : base(numero, fecha) { }
 
         public override void Imprimir()
