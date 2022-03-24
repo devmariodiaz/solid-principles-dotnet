@@ -15,7 +15,7 @@ namespace Solid.I
             Console.WriteLine($"Imprimiendo la factura {Numero} del dia {Fecha.ToShortDateString()}");
         }
 
-        public override void EnviarPorEmail()
+        public void EnviarPorEmail()
         {
             Console.WriteLine($"Enviando por Email la factura electrónica {Numero} del dia {Fecha.ToShortDateString()}");
         }

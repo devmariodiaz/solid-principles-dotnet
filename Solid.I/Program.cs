@@ -11,4 +11,3 @@ facturaElectronica.Imprimir();
 facturaElectronica.EnviarPorEmail();
 
 factura.Imprimir();
-factura.EnviarPorEmail(); // No se puede enviar por email

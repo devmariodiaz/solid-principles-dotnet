@@ -11,10 +11,5 @@ namespace Solid.I
         {
             Console.WriteLine($"Imprimiendo la factura {Numero} del dia {Fecha.ToShortDateString()}");
         }
-
-        public override void EnviarPorEmail()
-        {
-            // Operacion invalida para factura
-        }
     }
 }

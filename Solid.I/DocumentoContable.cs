@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Solid.I
 {
-    public abstract class DocumentoContable
+    public abstract class DocumentoContable : IImprimible
     {
         public int Numero { get; set; }
         public DateTime Fecha { get; set; }
@@ -17,6 +17,5 @@ namespace Solid.I
         }
 
         public abstract void Imprimir();
-        public abstract void EnviarPorEmail();
     }
 }
